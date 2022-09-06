@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Добавление товара</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1> Добавить товар </h1>
+    <form method="post">
+        <p><label>Цветок:</label><input type="text" class="container form-control" name="name_flower" id="name_flower"
+                                        placeholder="Наименование цветов"></p>
+        <p><label>Цена:</label><input type="number" class="container form-control" name="price" id="price"
+                                      placeholder="x руб. за 1 шт."></p>
+        <p><label>Расцветка:</label><input type="text" class="container form-control" name="color" id="color"
+                                           placeholder="цвет"></p>
+        <p><label>Длина цветка:</label><input type="text" class="container form-control" name="size_len" id="size_len"
+                                              placeholder="x см">
+        </p>
+
+        <p><input type="submit" class="btn btn-success"></p>
+    </form>
+</div>
+{% endblock content %}
